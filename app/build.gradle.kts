@@ -45,4 +45,47 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    //retrofit and gson
+    implementation(libs.retrofit2.retrofit)
+    implementation(libs.converter.gson)
+
+    //logging interceptor
+    implementation(libs.logging.interceptor)
+//
+//    //datastore
+//    implementation(libs.androidx.datastore.preferences)
+//
+//    //lifecycle components
+//    implementation(libs.androidx.lifecycle.extensions)
+//    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+//    implementation(libs.androidx.lifecycle.livedata.ktx)
+//    implementation(libs.androidx.lifecycle.common.java8)
+//
+//    //coroutines
+//    implementation(libs.kotlin.stdlib.jdk7)
+//    implementation(libs.kotlinx.coroutines.core)
+//    implementation(libs.kotlinx.coroutines.android)
+
+    // Preferences DataStore
+
+    implementation(libs.androidx.datastore.preferences)
+
+    // Lifecycle components
+
+    implementation (libs.androidx.lifecycle.livedata.ktx)
+
+    implementation (libs.androidx.lifecycle.extensions)
+
+    implementation (libs.androidx.lifecycle.common.java8)
+
+    implementation (libs.androidx.lifecycle.viewmodel.ktx)
+
+    // Kotlin coroutines components
+
+    implementation (libs.kotlin.stdlib.jdk7)
+
+    api (libs.kotlinx.coroutines.core)
+
+    api (libs.kotlinx.coroutines.android)
 }
